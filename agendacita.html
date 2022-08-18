@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agenda</title>
+    <meta charset="UTF-8">
+        <!--Icono-->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/mainform.css" media="screen,projection">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- Compiled and minified CDN CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+      <nav class="nav-rapper"><!--#Define una sección que solamente contiene enlaces de navegación-->
+        <div class="container"> 
+          <a href="#!" class="brand-logo">H. La Esperanza</a>  
+          <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+            <i class="material-icons white-text">menu</i>
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a target="_blank" href="./index.html" > Inicio</a></li>
+            <li><a href="./contacto.html">Contactanos</a></li>
+          </ul>
+        </div>  
+      </nav>   
+<br>
+<div class="container">
+<div class="row">
+  <form class="col s12" action="index.html">
+    <div class="row card-panel cols12">
+      <div class="input-field col s6">
+        <input id="ingresa_name" type="text" class="validate"required>
+        <label for="ingresa_name">Ingresa tu nombre</label>
+      </div>
+      
+      <div class="input-field col s6">
+        <input id="ingresa_apellido" type="text" class="validate" required>
+        <label for="ingresa_apellido">Ingresa tus Apellidos</label>
+      </div>      
+      <label>Tipo de Indetificacion</label>
+      <select class="browser-default">
+        <option value="" disabled selected>Elija su tipo de documento</option>
+        <option value="1">Tarjeta de Indetificacion</option>
+        <option value="2">Cedula de Ciudadania</option>
+        <option value="3">Cedula Extranjera</option>
+      </select>
+      
+      <br>
+            <div class="input-field col s6">
+        <input id="ingresa_doc" type="number" class="validate"required>
+        <label for="ingresa_doc">Numero de documento</label>
+      </div>
+      
+      <div>
+        <div class="row">
+        <div class="input-field col s6">          
+          <i class="material-icons prefix">calendar_month</i>    
+          <input type="text" class="datepicker" placeholder="Fecha de cita"> Fecha de cita             
+            </div>  
+          </div>
+          <div class="input-field col s6">
+          <i class="material-icons prefix">location_on</i>    
+            <input id="direccion" type="text" class="validate" required>
+            <label for="direccion">Ingresa tu direccion</label>
+          </div>
+          <div class="input-field col s6">
+          <i class="material-icons prefix">location_on</i>    
+            <input id="direccion2" type="text" class="validate" >
+            <label for="direccion2">Ingresa tu direccion 2</label>
+          </div>
+          <div class="input-field col s6 left">
+            <i class="material-icons prefix">phone</i>
+            <input id="icon_telephone" type="number" class="validate" required>
+            <label for="icon_telephone">Numero de contacto</label>
+
+          </div>
+        </div>
+        
+        <div class="row col s12 input-field">
+          <input id="ingresa_cita" type="text" class="validate" required>
+          <label for="ingresa_cita" >Diganos de que se trata la cita</label>        
+              
+          
+                  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Enviar</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+
+      <h4>Alerta</h4>
+      <p>Esta usted seguro que quiere realizar esta cita?</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">No</a>
+      <button class="btn waves-effect waves-light right" type="submit" name="enviar">Confirmar
+        <i class="material-icons right">send</i>
+      </button>
+    </div>
+  </div>
+          
+        </div>
+        </form>
+    </div>
+  </div>
+  </div>
+</div>
+  
+
+<ul class="sidenav" id="menu-responsive">
+  <li><a href="./index.html" > Home</a></li>
+  <li><a href="./contacto.html">Contactanos</a></li>
+</ul>
+
+
+
+<footer class="page-footer teal">
+  <div class="container">
+      <div class="row">
+          <div class="col l6 s12">
+              <h5 class="white-text">Bio Hospital</h5>
+              <p class="grey-text text-lighten-4">Somos un equipo de jovenes trabajando en este proyecto como si fuera nuestro trabajo de tiempo completo. Cualquier cantidad ayudaría a apoyar y continuar el desarrollo de este proyecto y es muy apreciada.</p>
+          </div>
+
+          <div class="col l3 s12">
+              <h5 class="white-text">Informacion</h5>
+              <ul>
+                  <li><a class="white-text" href="#!">ALEX YESID CAICEDO PALACIOS</a></li>
+                  <li><a class="white-text" href="#!">3147096254</a></li>
+                  <li><a class="white-text" href="#!">La victoria #2 zona norte</a></li>
+              </ul>
+          </div>
+      </div> 
+  </div>
+  <div class="footer-copyright">
+      <div class="container">
+          Made by <a class="brown-text text-lighten-3" href="#">Alex Yesid</a>
+      </div>
+  </div>
+</footer>
+
+
+<!--Iniciar cualquier script-->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
+
+
+ </script>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ 
+ <!--JavaScript at end of body for optimized loading-->
+ <script type="text/javascript" src="js/materialize.min.js"></script>
+ <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ <script src="./js/materialize.js"></script>
+ <script src="./js/init.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.datepicker');
+    var instances = M.Datepicker.init(elems, Option);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+         
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+</script>
+</body>
+</html>
